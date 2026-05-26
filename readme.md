@@ -8,7 +8,7 @@ This project was created as part of my frontend development learning journey dur
 
 ## 🚀 Live Demo
 
-Add your live deployment link here:
+live deployment link is here:
 
 ```bash
 coming soon after few minor debugging
