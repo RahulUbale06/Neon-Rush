@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Neon Rush</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+</head>
+
+<body>
+
+  <!-- BACKGROUND -->
+
+  <div class="grid-bg"></div>
+
+  <div class="glow glow-left"></div>
+  <div class="glow glow-right"></div>
+
+  <!-- START SCREEN -->
+
+  <div id="start-screen" class="screen active">
+
+    <h1>NEON RUSH</h1>
+
+    <p>
+      Hit the matching neon blocks before time runs out.
+    </p>
+
+    <button id="start-btn">
+      START GAME
+    </button>
+
+  </div>
+
+  <!-- GAME OVER -->
+
+  <div id="game-over" class="screen hidden">
+
+    <h1>GAME OVER</h1>
+
+    <div class="final-score">
+      FINAL SCORE :
+      <span id="final-score">0</span>
+    </div>
+
+    <button id="restart-btn">
+      PLAY AGAIN
+    </button>
+
+  </div>
+
+  <!-- MAIN -->
+
+  <main id="main">
+
+    <section id="panel">
+
+      <!-- TOP PANEL -->
+
+      <div id="top-panel">
+
+        <div class="stat-card">
+
+          <span class="label">
+            TARGET
+          </span>
+
+          <div
+            class="value"
+            id="hit-value"
+          >
+            0
+          </div>
+
+        </div>
+
+        <div class="stat-card">
+
+          <span class="label">
+            TIME
+          </span>
+
+          <div
+            class="value"
+            id="timer-value"
+          >
+            60
+          </div>
+
+        </div>
+
+        <div class="stat-card">
+
+          <span class="label">
+            SCORE
+          </span>
+
+          <div
+            class="value"
+            id="score-value"
+          >
+            0
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- BUBBLES -->
+
+      <div id="bubble-container"></div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
