@@ -1,3 +1,4 @@
+
 let timer = 60;
 let score = 0;
 let targetNumber = 0;
@@ -105,7 +106,12 @@ function generateBubbles(){
     "purple"
   ];
 
-  for(let i = 0; i < 114; i++){
+  const bubbleCount =
+    window.innerWidth < 768
+      ? 48
+      : 114;
+
+  for(let i = 0; i < bubbleCount; i++){
 
     const randomNumber =
       Math.floor(Math.random() * 10);
@@ -197,3 +203,13 @@ function restartGame(){
 
   startGame();
 }
+
+/* RESPONSIVE REFRESH */
+
+window.addEventListener(
+  "resize",
+  () => {
+    generateBubbles();
+  }
+);
+
